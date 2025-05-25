@@ -1,0 +1,93 @@
+/* Background for the dashboard */
+.dashboard-background {
+    background-image: url('https://usersinsights.com/wp/wp-content/uploads/2018/11/attendance-management-system.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Enhanced container styling */
+.dashboard-container {
+    font-family: 'Poppins', sans-serif; /* Modern and stylish font */
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(145deg, #ffffff, #e6e9ef);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    width: 90%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Adding decorative borders */
+.dashboard-container::before,
+.dashboard-container::after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(141, 76, 76, 0.3), transparent);
+    transform: rotate(45deg);
+    z-index: 1;
+    pointer-events: none;
+    animation: float 6s infinite ease-in-out;
+    opacity: 0.7;
+}
+
+/* Subtle floating animation for the decorative background */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.1);
+    }
+}
+
+/* Styling for the heading */
+.dashboard-heading {
+    color: #4c4c8d;
+    font-size: 3rem; /* Larger font size for a striking effect */
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the 'View My Attendance' button */
+.view-attendance-btn {
+    background: linear-gradient(145deg, #8d4c4c, #6a3030);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.4rem; /* Slightly larger font for prominence */
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 14px rgba(141, 76, 76, 0.4);
+}
+
+/* Hover effect for the button */
+.view-attendance-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 18px rgba(106, 48, 48, 0.5);
+}
+
+/* Focus effect for the button */
+.view-attendance-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(141, 76, 76, 0.5);
+}
+
+/* Button active state effect */
+.view-attendance-btn:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,125 @@
+/* Container Styling */
+.update-subjects-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #e6e6fa, #e6e6fa);
+}
+
+/* Title Styling */
+.update-subjects-title {
+    font-size: 2.5rem;
+    color: #2a3d67;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Table Container Styling */
+.subjects-table-container {
+    max-width: 80%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.subjects-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subjects-table th {
+    background-color: #8d4c4c;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.subjects-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.subjects-table input[type="text"] {
+    padding: 6px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Buttons Container Styling */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* Apply Changes Button and Back Button Styling */
+.apply-changes-btn{
+    width: 150px; /* Reduced width */
+    padding: 10px; /* Reduced padding */
+    font-size: 1rem; /* Reduced font size */
+    font-weight: 600;
+    color: white;
+    background-color: #8d4c4c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.backk-btn {
+    height: 43px;
+    width: 150px; /* Reduced width */;
+    padding: 10px; /* Reduced padding */
+    font-size: 1rem; /* Reduced font size */
+    font-weight: 600;
+    color: white;
+    background-color: #8d4c4c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apply-changes-btn:hover,
+.backk-btn:hover {
+    background-color: #6a3030;
+    transform: scale(1.05);
+}
+
+/* Back Button Styling */
+.backk-btn {
+    background-color: #4c8d8d;
+}
+
+.backk-btn:hover {
+    background-color: #306a6a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .update-subjects-title {
+        font-size: 2rem;
+    }
+
+    .subjects-table {
+        font-size: 14px;
+    }
+
+    .apply-changes-btn,
+    .backk-btn {
+        width: 180px; /* Further reduced width on smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+    }
+}

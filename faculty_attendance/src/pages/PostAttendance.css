@@ -1,0 +1,179 @@
+/* General container for the dashboard */
+.dashboard-container {
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #f4f7fc, #e6e6fa);
+    box-sizing: border-box;
+}
+
+/* Welcome message */
+.welcome-message {
+    font-size: 2.5rem;
+    color: #2a3d67; /* Changed color to a deeper shade for better contrast */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+}
+
+/* Dashboard heading */
+.dashboard-heading {
+    font-size: 2.2rem;
+    color: #2a3d67; /* Adjusted to match the theme */
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Subject card */
+.subject-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    margin-bottom: 40px;
+    width: 85%;
+    max-width: 750px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e6e6fa;
+    background: linear-gradient(135deg, #ffffff 30%, #f9f9f9 100%);
+}
+
+/* Hover effect for subject card */
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.15);
+}
+
+/* Subject name styling */
+.subject-name {
+    font-size: 1.8rem;
+    color: #2a3d67; /* Deepened color for consistency */
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Student list */
+.student-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.student-item {
+    font-size: 1.2rem;
+    color: #3a4d70; /* Softer text color for better readability */
+    margin-bottom: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Hover effect for student item */
+.student-item:hover {
+    color: #2a3d67; /* Matching color when hovered */
+    transform: translateX(5px);
+}
+
+/* Button for marking attendance */
+.mark-attendance-btn {
+    padding: 12px 25px;
+    background-color: #8d4c4c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding an icon to the button */
+.mark-attendance-btn i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* Button hover effect */
+.mark-attendance-btn:hover {
+    background-color: #6a3030;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button focus effect */
+.mark-attendance-btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px #8d4c4c;
+}
+/* Logout button styling */
+/* Logout button styling */
+.logout-btn {
+    position: fixed;
+    bottom: 0; /* Positioned at the bottom of the screen */
+    right: 0; /* Positioned at the far right of the screen */
+    margin-bottom: 20px; /* Optional: adds a margin for spacing from the edge */
+    margin-right: 20px; /* Optional: adds a margin for spacing from the edge */
+    z-index: 1000; /* Ensures the button is above other elements */
+}
+
+.logout-btn button {
+    padding: 10px 20px;
+    background-color: #8d4c4c !important; /* Ensure color is applied */
+    color: white !important; /* Ensures text color is white */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Hover effect for the logout button */
+.logout-btn button:hover {
+    background-color: #6a3030 !important; /* Slightly darker shade on hover */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .subject-card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .welcome-message {
+        font-size: 2rem;
+    }
+
+    .dashboard-heading {
+        font-size: 1.8rem;
+    }
+
+    .subject-name {
+        font-size: 1.6rem;
+    }
+
+    .student-item {
+        font-size: 1.1rem;
+    }
+}

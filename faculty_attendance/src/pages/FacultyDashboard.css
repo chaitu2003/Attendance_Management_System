@@ -1,0 +1,80 @@
+/* Faculty Dashboard Styling */
+.dashboard-container {
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #f4f7fc, #e6e6fa);
+    box-sizing: border-box;
+}
+
+.dashboard-heading {
+    font-size: 2.5rem;
+    color: #2a3d67;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-btn {
+    padding: 12px 25px;
+    background-color: #8d4c4c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-btn:hover {
+    background-color: #6a3030;
+    transform: scale(1.05);
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: #4c8d8d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    background-color: #306a6a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-heading {
+        font-size: 2rem;
+    }
+
+    .dashboard-btn {
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .back-btn {
+        font-size: 0.9rem;
+    }
+}

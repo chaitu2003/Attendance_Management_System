@@ -1,0 +1,91 @@
+/* Admin Login Page Background */
+.admin-login-background {
+    background-image: url('https://t3.ftcdn.net/jpg/05/00/34/58/360_F_500345899_4OqmtspFst6SRnNQvLj7h7TfKOrBwTer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7; /* Fallback background color */
+}
+
+/* Admin Login Container */
+.admin-login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+.admin-login-header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-login-input {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.admin-login-input:focus {
+    border-color: #8d4c4c;
+    outline: none;
+}
+
+/* Button */
+.admin-login-button {
+    width: 93%;
+    padding: 12px;
+    background-color: #8d4c4c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-login-button:hover {
+    background-color: #6a3030;
+}
+
+/* Error Message */
+.admin-login-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

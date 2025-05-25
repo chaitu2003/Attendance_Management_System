@@ -1,0 +1,155 @@
+/* Mark Attendance Styling */
+.mark-attendance-container {
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #f4f7fc, #e6e6fa);
+    box-sizing: border-box;
+}
+
+.attendance-heading {
+    font-size: 2.5rem;
+    color: #2a3d67;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.date-label {
+    font-weight: 600;
+    color: #2a3d67;
+}
+
+.date-input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid #8d4c4c;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #2a3d67;
+}
+
+/* Student List */
+.student-list {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+.student-item {
+    background: white;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-name {
+    font-size: 1.1rem;
+    color: #2a3d67;
+    font-weight: 600;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2a3d67;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.radio-input {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Buttons */
+.submit-btn {
+    padding: 12px 25px;
+    background-color: #8d4c4c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #6a3030;
+    transform: scale(1.05);
+}
+
+.bacck-btn {
+    padding: 10px 20px;
+    background-color: #4c8d8d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.bacck-btn:hover {
+    background-color: #306a6a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .attendance-heading {
+        font-size: 2rem;
+    }
+
+    .date-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-input {
+        width: 100%;
+    }
+
+    .student-list {
+        width: 100%;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+
+    .bacck-btn {
+        font-size: 0.9rem;
+    }
+}
