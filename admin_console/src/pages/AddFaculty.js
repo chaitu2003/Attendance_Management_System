@@ -22,7 +22,7 @@ const AddFaculty = () => {
                 password: facultyPassword
             };
 
-            const response = await axios.post(REACT_APP_API_URL, payload);
+            const response = await axios.post(https://attendance-management-system-s3xb.onrender.com/faculty, payload);
 
             if (response.status === 201) {
                 setSuccessMessage('Faculty created successfully');
