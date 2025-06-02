@@ -13,7 +13,7 @@ const PostAttendance = ({ authData, setAuthData }) => {
         const fetchSubjectsAndStudents = async () => {
             try {
                 const response = await axios.get(
-                    `http://attendance-management-system-s3xb.onrender.com/api/subjects/faculty/${authData.facultyId}/subjects-students`,
+                    `http://attendance-management-system1.onrender.com/api/subjects/faculty/${authData.facultyId}/subjects-students`,
                     { headers: { Authorization: `Bearer ${authData.token}` } }
                 );
                 setSubjects(response.data);
