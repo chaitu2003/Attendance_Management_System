@@ -65,7 +65,7 @@ const UpdateFaculty = () => {
                 password: faculty.password,
             }));
 
-            const response = await axios.put('http://localhost:5000/api/faculty', payload);
+            const response = await axios.put('http://attendance-management-system-s3xb.onrender.com/api/faculty', payload);
 
             if (response.status === 200) {
                 alert('Faculty updated successfully!');
