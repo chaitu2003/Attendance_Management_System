@@ -11,7 +11,7 @@ const FacultyLogin = ({ setAuthData }) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/loginFacultyUser', {
+            const response = await axios.post('http://attendance-management-system-s3xb.onrender.com/api/auth/loginFacultyUser', {
                 email,
                 password,
             });
