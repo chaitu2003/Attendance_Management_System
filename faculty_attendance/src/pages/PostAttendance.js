@@ -13,7 +13,7 @@ const PostAttendance = ({ authData, setAuthData }) => {
         const fetchSubjectsAndStudents = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5000/api/subjects/faculty/${authData.facultyId}/subjects-students`,
+                    `http://attendance-management-system-s3xb.onrender.com/api/subjects/faculty/${authData.facultyId}/subjects-students`,
                     { headers: { Authorization: `Bearer ${authData.token}` } }
                 );
                 setSubjects(response.data);
@@ -39,7 +39,7 @@ const PostAttendance = ({ authData, setAuthData }) => {
     //     try {
     //         // Fetch attendance report from backend
     //         const response = await axios.get(
-    //             `http://localhost:5000/api/faculty/${authData.facultyId}/attendance-report`,
+    //             `http://attendance-management-system-s3xb.onrender.com/api/faculty/${authData.facultyId}/attendance-report`,
     //             {
     //                 headers: { Authorization: `Bearer ${authData.token}` },
     //             }
