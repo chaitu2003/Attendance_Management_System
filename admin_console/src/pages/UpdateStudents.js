@@ -12,7 +12,7 @@ const UpdateStudents = () => {
     useEffect(() => {
         const fetchStudents = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/students');
+                const response = await axios.get('http://attendance-management-system-s3xb.onrender.com/api/students');
                 setStudents(response.data);
             } catch (error) {
                 console.error('Error fetching Students:', error);
@@ -61,7 +61,7 @@ const UpdateStudents = () => {
                 password: student.password,
             }));
 
-            const response = await axios.put('http://localhost:5000/api/students', payload);
+            const response = await axios.put('http://attendance-management-system-s3xb.onrender.com/api/students', payload);
 
             if (response.status === 200) {
                 alert('Students updated successfully!');
