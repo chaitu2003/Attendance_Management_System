@@ -14,7 +14,7 @@ const MarkAttendance = ({ authData }) => {
         const fetchSubjectDetails = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5000/api/subjects/${subjectId}/students`,
+                    `http://attendance-management-system-s3xb.onrender.com/api/subjects/${subjectId}/students`,
                     { headers: { Authorization: `Bearer ${authData.token}` } }
                 );
                 setStudents(response.data.students);
@@ -54,7 +54,7 @@ const MarkAttendance = ({ authData }) => {
 
             for (const record of attendanceRecords) {
                 await axios.post(
-                    `http://localhost:5000/api/attendance`,
+                    `http://attendance-management-system-s3xb.onrender.com/api/attendance`,
                     record,
                     { headers: { Authorization: `Bearer ${authData.token}` } }
                 );
