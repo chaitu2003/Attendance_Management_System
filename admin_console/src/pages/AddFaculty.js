@@ -22,7 +22,7 @@ const AddFaculty = () => {
                 password: facultyPassword
             };
 
-            const response = await axios.post('http://localhost:5000/api/faculty', payload);
+            const response = await axios.post(REACT_APP_API_URL, payload);
 
             if (response.status === 201) {
                 setSuccessMessage('Faculty created successfully');
