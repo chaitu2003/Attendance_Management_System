@@ -14,7 +14,7 @@ const AssignFacultyToSubject = () => {
     // Fetch unassigned subjects
     const fetchSubjects = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/subjects/getAllUnAssignedSubjects');
+            const response = await axios.get('http://attendance-management-system-s3xb.onrender.com/api/subjects/getAllUnAssignedSubjects');
             setSubjects(response.data);
         } catch (error) {
             console.error('Error fetching subjects:', error);
@@ -24,7 +24,7 @@ const AssignFacultyToSubject = () => {
     // Fetch all faculties
     const fetchFaculties = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/faculty/');
+            const response = await axios.get('http://attendance-management-system-s3xb.onrender.com/api/faculty/');
             setFaculties(response.data);
         } catch (error) {
             console.error('Error fetching faculties:', error);
@@ -41,7 +41,7 @@ const AssignFacultyToSubject = () => {
 
         try {
             const payload = { faculty: selectedFaculty };
-            const response = await axios.put(`http://localhost:5000/api/subjects/${selectedSubject}`, payload);
+            const response = await axios.put(`http://attendance-management-system-s3xb.onrender.com/api/subjects/${selectedSubject}`, payload);
             setMessage('Faculty assigned successfully!');
             if (response.status === 200) {
                 alert('Faculty assigned successfully!');
