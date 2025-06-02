@@ -12,7 +12,7 @@ const AttendanceReport = ({ authData }) => {
         try {
             // Fetch attendance report from backend
             const response = await axios.get(
-                `http://localhost:5000/api/faculty/${authData.facultyId}/attendance-report`,
+                `http://attendance-management-system-s3xb.onrender.com/api/faculty/${authData.facultyId}/attendance-report`,
                 {
                     headers: { Authorization: `Bearer ${authData.token}` },
                 }
