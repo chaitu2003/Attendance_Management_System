@@ -13,7 +13,7 @@ const UpdateFaculty = () => {
     useEffect(() => {
         const fetchFaculty = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/faculty');
+                const response = await axios.get('http://attendance-management-system-s3xb.onrender.com/api/faculty');
                 setFaculty(response.data);
             } catch (error) {
                 console.error('Error fetching Faculty:', error);
