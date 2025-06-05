@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './UpdateStudents.css'; // Assuming the CSS file is named UpdateStudents.css
+import './UpdateStudents.css'; 
 
 const UpdateStudents = () => {
     const navigate = useNavigate();
