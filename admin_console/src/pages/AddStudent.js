@@ -21,7 +21,7 @@ const AddStudent = () => {
                 password: studentPassword
             };
 
-            const response = await axios.post('http://attendance-management-system1.onrender.com/api/students', payload);
+            const response = await axios.post('https://attendance-management-system1.onrender.com/api/students', payload);
 
             if (response.status === 201) {
                 setSuccessMessage('Student created successfully.');
