@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './UpdateSubjects.css'; // Importing the new CSS file
+import './UpdateSubjects.css'; 
 
 const UpdateSubjects = () => {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ const UpdateSubjects = () => {
     useEffect(() => {
         const fetchSubjects = async () => {
             try {
-                const response = await axios.get('http://attendance-management-system1.onrender.com/api/subjects');
+                const response = await axios.get('https://attendance-management-system1.onrender.com/api/subjects');
                 setSubjects(response.data);
             } catch (error) {
                 console.error('Error fetching subjects:', error);
@@ -60,7 +60,7 @@ const UpdateSubjects = () => {
                 code: subject.code,
             }));
 
-            const response = await axios.put('http://attendance-management-system1.onrender.com/api/subjects', payload);
+            const response = await axios.put('https://attendance-management-system1.onrender.com/api/subjects', payload);
 
             if (response.status === 200) {
                 alert('Subjects updated successfully!');
