@@ -18,6 +18,7 @@ const LoginPage = ({ setAuthData }) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
+            // api to authenticate user login credentials
             const response = await axios.post('http://attendance-management-system1.onrender.com/api/auth/loginStudentUser', { email, password });
             setAuthData({
                 token: response.data.token,
