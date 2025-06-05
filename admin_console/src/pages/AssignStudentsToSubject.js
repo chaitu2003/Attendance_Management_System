@@ -14,7 +14,7 @@ const AssignStudentsToSubject = () => {
     const fetchSubjects = async () => {
         try {
             const response = await axios.get(
-                "http://attendance-management-system1.onrender.com/api/subjects/getAllSubjectDetails"
+                "https://attendance-management-system1.onrender.com/api/subjects/getAllSubjectDetails"
             );
             setSubjects(response.data);
         } catch (error) {
@@ -25,7 +25,7 @@ const AssignStudentsToSubject = () => {
     // Fetch students
     const fetchStudents = async () => {
         try {
-            const response = await axios.get("http://attendance-management-system1.onrender.com/api/students");
+            const response = await axios.get("https://attendance-management-system1.onrender.com/api/students");
             setStudents(response.data);
         } catch (error) {
             console.error("Error fetching students:", error);
@@ -42,7 +42,7 @@ const AssignStudentsToSubject = () => {
         try {
             const payload = { students: selectedStudents };
             const response = await axios.put(
-                `http://attendance-management-system1.onrender.com/api/subjects/assignSubjectToStudents/${selectedSubject}`,
+                `https://attendance-management-system1.onrender.com/api/subjects/assignSubjectToStudents/${selectedSubject}`,
                 payload
             );
 
