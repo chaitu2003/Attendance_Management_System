@@ -19,7 +19,7 @@ const AddSubject = () => {
                 code: subjectCode,
             };
 
-            const response = await axios.post('http://attendance-management-system1.onrender.com/api/subjects', payload);
+            const response = await axios.post('https://attendance-management-system1.onrender.com/api/subjects', payload);
 
             if (response.status === 201) {
                 setSuccessMessage('Subject created successfully');
