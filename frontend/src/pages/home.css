@@ -1,0 +1,75 @@
+.home {
+    background: url('https://t3.ftcdn.net/jpg/05/00/34/58/360_F_500345899_4OqmtspFst6SRnNQvLj7h7TfKOrBwTer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin-top: 70px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 10px;
+    padding-top: 100px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #8d4c4c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background-color: #6a3030;
+    color: white;
+}
+
+/* 🔽 Media Query for Small Screens */
+@media (max-width: 480px) {
+    .header {
+        font-size: 1.5rem;
+        padding-top: 60px;
+    }
+
+    .container {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
